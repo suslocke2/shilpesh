@@ -1,21 +1,17 @@
-var express = require('express');
-var router = express.Router();
+var express = require('express')
+var app = express()
 
-/* GET home page. */
-router.get('/', function (req, res, next) {
-    res.render('index', {compliments: ['Awesome', 'Cool', 'The best programmer over the world']});
-});
+app.get('/', function(req, res) {
+	// render to views/index.ejs template file
+	res.render('index', {title: 'My Node.js Application'})
+})
 
-router.get('/test/:id', function (req, res, next) {
-    console.log("Request handler random was called.");
-    var vd = require('../videodata.json');
-    res.writeHead(200, {"Content-Type": "application/json"});
-    res.write(JSON.stringify(vd));
-    res.end();
-});
-
-router.post('/test/submit', function (req, res, next) {
-    var body = req.body.id;
-    res.redirect('/test/' + body);
-});
-module.exports = router;
+/** 
+ * We assign app object to module.exports
+ * 
+ * module.exports exposes the app object as a module
+ * 
+ * module.exports should be used to return the object 
+ * when this file is required in another module like app.js
+ */ 
+module.exports = app;

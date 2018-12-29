@@ -1,9 +1,22 @@
-# Start your Nodejs REST API project here!
-<p align="center">
-  <a>
-    <img alt="nodejs rest api" src="https://psv4.userapi.com/c816222/u90863739/docs/3dff6e09b103/logo.png?extra=D3jUAMF4mur8dHPx9warbnh-qt6DxRUfYkZibIaAc_ZF3hnjgt4Na-EE4LHKLW-xbMgfqv6DeJqImTjNZ0JIG1whzIrni8UTTPvYYy69h28p8OB4nFeehw" width="400"/>
-  </a>
-</p>
+Node.js, Express & MySQL: Simple Add, Edit, Delete, View (CRUD)
+========
 
-### Developed with Top technologies: Nodejs + mongodb + Mongoose
-#### warn: Heroku-ready! Love dis cloud server
+A simple and basic CRUD application (Create, Read, Update, Delete) using Node.js, Express, MySQL & EJS Templating Engine.
+
+**Blog:** [Node.js, Express & MySQL: Simple Add, Edit, Delete, View (CRUD)](http://blog.chapagain.com.np/node-js-express-mysql-simple-add-edit-delete-view-crud/)
+
+**Creating database and table**
+
+```
+create database test;
+
+use test;
+
+CREATE TABLE users (
+id int(11) NOT NULL auto_increment,
+name varchar(100) NOT NULL,
+age int(3) NOT NULL,
+email varchar(100) NOT NULL,
+PRIMARY KEY (id)
+);
+```
