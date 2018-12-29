@@ -1,0 +1,27 @@
+{
+  "name": "crudapp",
+  "version": "1.0.0",
+  "description": "crud app via www.codementor.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm -v",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "crud",
+    "express",
+    "mongodb",
+    "nodejs"
+  ],
+  "author": "Shammi Hans <shammihans1@gmail.com> (http://www.shammihans.com)",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "ejs": "^2.5.7",
+    "express": "^4.15.3",
+    "mongodb": "^2.2.30"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
